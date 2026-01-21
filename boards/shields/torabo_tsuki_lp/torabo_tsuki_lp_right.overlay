@@ -4,6 +4,14 @@
 
 &trackball_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    scroller {
+        layers = <5>;                                      // スクロールレイヤー
+        input-processors = <
+            &zip_xy_to_scroll_mapper                       // XY移動でスクロール
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT // スクロールのY軸を反転
+            &zip_scroll_scaler 1 16                        // スクロール感度調整
+        >;
+    };
 };
 
 &size_s_transform {
