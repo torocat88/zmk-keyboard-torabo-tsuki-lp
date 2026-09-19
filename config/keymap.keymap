@@ -32,32 +32,34 @@
 
         layer_0 {
             bindings = <
-&none       &none     &none     &none      &none  &none                        &none  &none  &none      &none     &none     &none
-&kp ESCAPE  &kp Q     &kp W     &kp E      &kp R  &kp T                        &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB     &kp A     &kp S     &kp D      &kp F  &kp G  &none      &none      &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V  &kp B  &kp LBKT   &kp RBKT   &kp N  &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL   &kp LGUI  &kp LALT  &kp GRAVE  &mo 3  &mo 2  &kp SPACE  &kp ENTER  &mo 1  &none  &none      &kp RALT  &kp BSLH  &kp RCTRL
+&none       &none     &none     &none      &none      &none                        &none  &none  &none      &none     &none     &none
+&kp ESCAPE  &kp Q     &kp W     &kp E      &kp R      &kp T                        &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB     &kp A     &kp S     &kp D      &kp F      &kp G  &none      &none      &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B  &kp LBKT   &kp RBKT   &kp N  &kp M  &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LCTRL   &kp LGUI  &kp LALT  &kp GRAVE  &kp MINUS  &mo 2  &kp SPACE  &kp ENTER  &mo 1  &none  &none      &kp RALT  &kp BSLH  &kp RCTRL
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                                  &trans     &trans          &trans        &trans           &trans     &trans
-&trans  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                                  &kp N6     &kp N7          &kp N8        &kp N9           &kp N0     &kp DEL
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans          &trans          &kp PG_UP  &kp HOME        &kp UP_ARROW  &kp END          &kp MINUS  &kp EQUAL
-&trans  &trans  &trans  &trans     &trans     &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp PG_DN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans     &trans
-&trans  &trans  &trans  &trans     &trans     &mo 3   &trans          &trans          &trans     &trans          &trans        &trans           &trans     &trans
+&trans  &trans  &trans  &trans     &trans     &trans                                  &trans     &trans          &trans        &trans           &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                                  &kp N6     &kp N7          &kp N8        &kp N9           &kp N0  &kp DEL
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans          &trans          &kp PG_UP  &kp HOME        &kp UP_ARROW  &kp END          &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &kp PG_DN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans     &kp EQUAL  &mo 3   &trans          &trans          &trans     &trans          &trans        &trans           &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                               &trans             &trans     &trans     &trans  &trans           &trans
-&trans  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5                               &kp F6             &kp F7     &kp F8     &kp F9  &kp F10          &kp F11
-&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &trans     &trans     &kp LC(LS(EQUAL))  &mkp LCLK  &mkp RCLK  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LANG2  &kp LANG1  &kp LC(MINUS)      &trans     &trans     &trans  &trans           &trans
-&trans  &trans  &trans          &trans          &trans           &trans         &trans     &trans     &mo 3              &trans     &trans     &trans  &trans           &trans
+&trans  &trans  &trans          &trans          &trans           &trans                               &trans  &trans     &trans     &trans  &trans           &trans
+&trans  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5                               &kp F6  &kp F7     &kp F8     &kp F9  &kp F10          &kp F11
+&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &trans     &trans     &trans  &mkp LCLK  &mkp RCLK  &trans  &kp PRINTSCREEN  &kp F12
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LANG2  &kp LANG1  &trans  &trans     &trans     &trans  &trans           &trans
+&trans  &trans  &trans          &trans          &trans           &trans         &trans     &trans     &mo 3   &trans     &trans     &trans  &trans           &trans
             >;
+
+            label = "SCROLL";
         };
 
         layer_3 {
@@ -68,8 +70,6 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp PRINTSCREEN  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
 &trans  &trans        &trans        &kp N0        &trans  &trans           &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
             >;
-
-            label = "SCROLL";
         };
 
         layer_4 {
